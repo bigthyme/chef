@@ -11,8 +11,8 @@ service "httpd" do
 end
 
 # # try node
-# package "" do
-# end
+package "" do
+end
 
 cookbook_file "#{WEB_PATH}/html/index.html" do
     source "index.html"

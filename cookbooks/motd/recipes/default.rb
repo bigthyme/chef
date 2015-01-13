@@ -7,10 +7,7 @@
 # All rights reserved - Do Not Redistribute
 #
 
-LOCATION = "/etc"
-
-template "#{LOCATION}/motd" do
+template "/etc/motd" do
   source "motd.erb"
   mode "0644"
-  action :create
 end

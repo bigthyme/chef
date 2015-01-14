@@ -32,7 +32,8 @@ node['apache']['sites'].each do |site_name, site_data|
     mode "0644"
     variables(
       :site_name => site_name,
-      :port => site_data['port']
+      :port => site_data['port'],
+      :image => site_data['img']
     )
   end
 end
